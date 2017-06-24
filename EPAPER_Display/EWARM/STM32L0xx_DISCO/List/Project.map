@@ -1,0 +1,364 @@
+###############################################################################
+#
+# IAR ELF Linker V8.11.2.13589/W32 for ARM                11/Jun/2017  14:34:53
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Exe\Project.out
+#    Map file     =  
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\List\Project.map
+#    Command line =  
+#        -f C:\Users\dimka\AppData\Local\Temp\EWD709.tmp
+#        (C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\gde021a1.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\main.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\startup_stm32l053xx.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0538_discovery.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0538_discovery_epd.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_cortex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_dma.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_flash.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_flash_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_gpio.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_msp.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_pwr.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_pwr_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_rcc.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_rcc_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_spi.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_tim.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_hal_tim_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\stm32l0xx_it.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\system_stm32l0xx.o
+#        --redirect _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Exe\Project.out
+#        --map
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\List\Project.map
+#        --config
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\stm32l053xx_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0800ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x20000000 to 0x20001fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A0":                                       0xc0
+  .intvec            ro code  0x08000000    0xc0  startup_stm32l053xx.o [1]
+                            - 0x080000c0    0xc0
+
+"P1":                                     0x4c38
+  .rodata            const    0x080000c0  0x35d4  stm32l0538_discovery_epd.o [1]
+  .text              ro code  0x08003694   0x690  stm32l0xx_hal_rcc.o [1]
+  .text              ro code  0x08003d24     0xc  stm32l0xx_hal.o [1]
+  .text              ro code  0x08003d30    0x24  stm32l0xx_hal.o [1]
+  .text              ro code  0x08003d54    0x36  I32DivMod.o [4]
+  .text              ro code  0x08003d8a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003d8c    0x70  stm32l0xx_hal_cortex.o [1]
+  .text              ro code  0x08003dfc     0x2  IntDivZer.o [4]
+  .text              ro code  0x08003dfe     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003e00   0x2ee  stm32l0xx_hal_spi.o [1]
+  .text              ro code  0x080040ee     0x2  stm32l0xx_hal_spi.o [1]
+  .text              ro code  0x080040f0   0x2d4  gde021a1.o [1]
+  .text              ro code  0x080043c4   0x1c0  stm32l0538_discovery.o [1]
+  .text              ro code  0x08004584   0x1c0  stm32l0xx_hal_gpio.o [1]
+  .text              ro code  0x08004744    0x18  stm32l0xx_hal.o [1]
+  .text              ro code  0x0800475c   0x198  stm32l0538_discovery_epd.o [1]
+  .text              ro code  0x080048f4   0x138  main.o [1]
+  .text              ro code  0x08004a2c    0x28  stm32l0xx_hal.o [1]
+  .text              ro code  0x08004a54    0x5c  ABImemcpy.o [4]
+  .text              ro code  0x08004ab0     0x2  stm32l0xx_hal_msp.o [1]
+  .text              ro code  0x08004ab2     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004ab4    0x58  system_stm32l0xx.o [1]
+  .text              ro code  0x08004b0c    0x40  zero_init3.o [4]
+  .text              ro code  0x08004b4c    0x3c  packbits_init_single.o [4]
+  .text              ro code  0x08004b88    0x28  data_init.o [4]
+  .iar.init_table    const    0x08004bb0    0x20  - Linker created -
+  .text              ro code  0x08004bd0    0x1a  cmain.o [4]
+  .text              ro code  0x08004bea     0x4  low_level_init.o [3]
+  .text              ro code  0x08004bee     0x8  exit.o [3]
+  .text              ro code  0x08004bf6     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004bf8     0xa  cexit.o [4]
+  .text              ro code  0x08004c02     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c04    0x14  exit.o [5]
+  .text              ro code  0x08004c18    0x12  stm32l0xx_it.o [1]
+  .text              ro code  0x08004c2a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c2c    0x10  stm32l0xx_hal.o [1]
+  .text              ro code  0x08004c3c    0x10  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c4c     0xc  cstartup_M.o [4]
+  .text              ro code  0x08004c58     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c5a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c5c     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c5e     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c60     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c62     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c64     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c66     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c68     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c6a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c6c     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c6e     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c70     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c72     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c74     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c76     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c78     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c7a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c7c     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c7e     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08004c80     0x2  startup_stm32l053xx.o [1]
+  .rodata            const    0x08004c82     0x0  zero_init3.o [4]
+  .rodata            const    0x08004c82     0x0  packbits_init_single.o [4]
+  Initializer bytes  const    0x08004c82    0x76  <for P2-1>
+                            - 0x08004cf8  0x4c38
+
+"P2", part 1 of 3:                          0x84
+  P2-1                        0x20000000    0x84  <Init block>
+    .data            inited   0x20000000    0x20  gde021a1.o [1]
+    .data            inited   0x20000020     0x8  stm32l0538_discovery_epd.o [1]
+    .data            inited   0x20000028    0x18  stm32l0538_discovery_epd.o [1]
+    .data            inited   0x20000040     0x8  stm32l0538_discovery_epd.o [1]
+    .data            inited   0x20000048     0xc  stm32l0xx_hal_rcc.o [1]
+    .data            inited   0x20000054    0x10  stm32l0xx_hal_rcc.o [1]
+    .data            inited   0x20000064    0x20  system_stm32l0xx.o [1]
+                            - 0x20000084    0x84
+
+"P2", part 2 of 3:                          0x58
+  .bss               zero     0x20000084    0x54  stm32l0538_discovery.o [1]
+  .bss               zero     0x200000d8     0x4  stm32l0xx_hal.o [1]
+                            - 0x200000dc    0x58
+
+"P2", part 3 of 3:                         0x400
+  CSTACK                      0x200000e0   0x400  <Block>
+    CSTACK           uninit   0x200000e0   0x400  <Block tail>
+                            - 0x200004e0   0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x58:
+          0x20000084  0x58
+
+Copy/packbits (__iar_packbits_init_single3)
+    1 source range, total size 0x76 (89% of destination):
+          0x08004c82  0x76
+    1 destination range, total size 0x84:
+          0x20000000  0x84
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                      ro code  ro data  rw data
+    ------                      -------  -------  -------
+C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj: [1]
+    gde021a1.o                      724       28       32
+    main.o                          312
+    startup_stm32l053xx.o           262
+    stm32l0538_discovery.o          448                84
+    stm32l0538_discovery_epd.o      408   13 816       40
+    stm32l0xx_hal.o                 128                 4
+    stm32l0xx_hal_cortex.o          112
+    stm32l0xx_hal_gpio.o            448
+    stm32l0xx_hal_msp.o               2
+    stm32l0xx_hal_rcc.o           1 680       25       28
+    stm32l0xx_hal_spi.o             752
+    stm32l0xx_it.o                   18
+    system_stm32l0xx.o               88       29       32
+    -----------------------------------------------------
+    Total:                        5 382   13 898      220
+
+command line: [2]
+    -----------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                            8
+    low_level_init.o                  4
+    -----------------------------------------------------
+    Total:                           12
+
+rt6M_tl.a: [4]
+    ABImemcpy.o                      92
+    I32DivMod.o                      54
+    IntDivZer.o                       2
+    cexit.o                          10
+    cmain.o                          26
+    cstartup_M.o                     12
+    data_init.o                      40
+    packbits_init_single.o           60
+    zero_init3.o                     64
+    -----------------------------------------------------
+    Total:                          360
+
+shb_l.a: [5]
+    exit.o                           20
+    -----------------------------------------------------
+    Total:                           20
+
+    Linker created                            32    1 024
+---------------------------------------------------------
+    Grand Total:                  5 774   13 930    1 244
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x08004bb0           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08004bd0           --   Gb  - Linker created -
+?main                   0x08004bd1          Code  Gb  cmain.o [4]
+AHBPrescTable           0x20000064    0x10  Data  Gb  system_stm32l0xx.o [1]
+APBAHBPrescTable        0x20000054    0x10  Data  Lc  stm32l0xx_hal_rcc.o [1]
+BSP_EPD_Clear           0x08004791    0x24  Code  Gb  stm32l0538_discovery_epd.o [1]
+BSP_EPD_DisplayChar     0x080047b5    0x50  Code  Gb  stm32l0538_discovery_epd.o [1]
+BSP_EPD_DisplayStringAt
+                        0x08004805    0xae  Code  Gb  stm32l0538_discovery_epd.o [1]
+BSP_EPD_GetXSize        0x0800477f     0xc  Code  Gb  stm32l0538_discovery_epd.o [1]
+BSP_EPD_Init            0x0800475d    0x22  Code  Gb  stm32l0538_discovery_epd.o [1]
+BSP_EPD_RefreshDisplay  0x080048b3    0x2c  Code  Gb  stm32l0538_discovery_epd.o [1]
+BSP_EPD_SetFont         0x0800478b     0x6  Code  Gb  stm32l0538_discovery_epd.o [1]
+CSTACK$$Base            0x200000e0           --   Gb  - Linker created -
+CSTACK$$Limit           0x200004e0           --   Gb  - Linker created -
+DebugMon_Handler        0x08004c1f     0x2  Code  Gb  stm32l0xx_it.o [1]
+EPD_Delay               0x0800457d     0x8  Code  Gb  stm32l0538_discovery.o [1]
+EPD_IO_Init             0x08004467    0xae  Code  Gb  stm32l0538_discovery.o [1]
+EPD_IO_WriteData        0x08004515    0x24  Code  Gb  stm32l0538_discovery.o [1]
+EPD_IO_WriteReg         0x08004539    0x22  Code  Gb  stm32l0538_discovery.o [1]
+Font12                  0x20000038     0x8  Data  Gb  stm32l0538_discovery_epd.o [1]
+Font12_Table            0x08002b10   0x7cc  Data  Gb  stm32l0538_discovery_epd.o [1]
+Font16                  0x20000030     0x8  Data  Gb  stm32l0538_discovery_epd.o [1]
+Font16_Table            0x08001abc  0x1054  Data  Gb  stm32l0538_discovery_epd.o [1]
+Font20                  0x20000020     0x8  Data  Gb  stm32l0538_discovery_epd.o [1]
+Font20_Table            0x080000c0  0x19fc  Data  Gb  stm32l0538_discovery_epd.o [1]
+Font8                   0x20000040     0x8  Data  Gb  stm32l0538_discovery_epd.o [1]
+Font8_Table             0x080032dc   0x3b8  Data  Gb  stm32l0538_discovery_epd.o [1]
+HAL_Delay               0x08004745    0x18  Code  Wk  stm32l0xx_hal.o [1]
+HAL_GPIO_Init           0x08004585   0x18a  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GPIO_ReadPin        0x0800470f     0xe  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GPIO_WritePin       0x0800471d     0xc  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GetTick             0x08003d25     0xc  Code  Wk  stm32l0xx_hal.o [1]
+HAL_IncTick             0x08004c2d    0x10  Code  Wk  stm32l0xx_hal.o [1]
+HAL_Init                0x08004a2d    0x22  Code  Gb  stm32l0xx_hal.o [1]
+HAL_InitTick            0x08003d31    0x24  Code  Wk  stm32l0xx_hal.o [1]
+HAL_MspInit             0x08004ab1     0x2  Code  Gb  stm32l0xx_hal_msp.o [1]
+HAL_NVIC_SetPriority    0x08003dc1     0x8  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_RCC_ClockConfig     0x08003a5d   0x1f8  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq     0x08003ccd    0x1a  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                        0x08003c69    0x60  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_OscConfig       0x08003695   0x3b6  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_SPI_DeInit          0x08003e83    0x2a  Code  Gb  stm32l0xx_hal_spi.o [1]
+HAL_SPI_GetState        0x08004029     0x6  Code  Gb  stm32l0xx_hal_spi.o [1]
+HAL_SPI_Init            0x08003e01    0x82  Code  Gb  stm32l0xx_hal_spi.o [1]
+HAL_SPI_Transmit        0x08003ead   0x170  Code  Gb  stm32l0xx_hal_spi.o [1]
+HAL_SYSTICK_Config      0x08003dc9    0x28  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HardFault_Handler       0x08004c1b     0x2  Code  Gb  stm32l0xx_it.o [1]
+MSIRangeTable           0x08003d08    0x1c  Data  Gb  stm32l0xx_hal_rcc.o [1]
+NMI_Handler             0x08004c19     0x2  Code  Gb  stm32l0xx_it.o [1]
+NVIC_SetPriority        0x08003d8d    0x34  Code  Lc  stm32l0xx_hal_cortex.o [1]
+PLLMulTable             0x20000048     0xc  Data  Lc  stm32l0xx_hal_rcc.o [1]
+PLLMulTable             0x20000074     0xc  Data  Gb  system_stm32l0xx.o [1]
+PendSV_Handler          0x08004c21     0x2  Code  Gb  stm32l0xx_it.o [1]
+Region$$Table$$Base     0x08004bb0           --   Gb  - Linker created -
+Region$$Table$$Limit    0x08004bd0           --   Gb  - Linker created -
+SPI_WaitOnFlagUntilTimeout
+                        0x08004031    0xb2  Code  Lc  stm32l0xx_hal_spi.o [1]
+SPIx_Error              0x08004459     0xe  Code  Lc  stm32l0538_discovery.o [1]
+SPIx_Init               0x080043c5    0x7a  Code  Lc  stm32l0538_discovery.o [1]
+SPIx_Write              0x0800443f    0x1a  Code  Lc  stm32l0538_discovery.o [1]
+SVC_Handler             0x08004c1d     0x2  Code  Gb  stm32l0xx_it.o [1]
+SpiHandle               0x20000084    0x54  Data  Lc  stm32l0538_discovery.o [1]
+SysTick_Handler         0x08004c23     0x8  Code  Gb  stm32l0xx_it.o [1]
+SystemCoreClock         0x20000080     0x4  Data  Gb  system_stm32l0xx.o [1]
+SystemInit              0x08004ab5    0x40  Code  Gb  system_stm32l0xx.o [1]
+WF_LUT                  0x08004368    0x5c  Data  Gb  gde021a1.o [1]
+__aeabi_idiv0           0x08003dfd          Code  Gb  IntDivZer.o [4]
+__aeabi_memcpy          0x08004a55          Code  Gb  ABImemcpy.o [4]
+__cmain                 0x08004bd1          Code  Gb  cmain.o [4]
+__exit                  0x08004c05    0x14  Code  Gb  exit.o [5]
+__iar_data_init3        0x08004b89    0x28  Code  Gb  data_init.o [4]
+__iar_packbits_init_single3
+                        0x08004b4d    0x3c  Code  Gb  packbits_init_single.o [4]
+__iar_program_start     0x08004c4d          Code  Gb  cstartup_M.o [4]
+__iar_small_uidiv       0x08003d55          Code  Gb  I32DivMod.o [4]
+__iar_small_uidivmod    0x08003d55          Code  Gb  I32DivMod.o [4]
+__iar_systems$$module {Abs}
+                        0x00000001          Data  Gb  command line/config [2]
+__iar_zero_init3        0x08004b0d    0x40  Code  Gb  zero_init3.o [4]
+__low_level_init        0x08004beb     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000          Data  Gb  startup_stm32l053xx.o [1]
+_call_main              0x08004bdd          Code  Gb  cmain.o [4]
+_exit                   0x08004bf9          Code  Gb  cexit.o [4]
+_main                   0x08004be7          Code  Gb  cmain.o [4]
+epd_drv                 0x2000002c     0x4  Data  Lc  stm32l0538_discovery_epd.o [1]
+exit                    0x08004bef     0x8  Code  Gb  exit.o [3]
+gde021a1_CloseChargePump
+                        0x08004205     0xa  Code  Gb  gde021a1.o [1]
+gde021a1_DrawImage      0x0800421b   0x14a  Code  Gb  gde021a1.o [1]
+gde021a1_GetEpdPixelHeight
+                        0x080041e9     0x4  Code  Gb  gde021a1.o [1]
+gde021a1_GetEpdPixelWidth
+                        0x080041e5     0x4  Code  Gb  gde021a1.o [1]
+gde021a1_Init           0x080040f1    0xa4  Code  Gb  gde021a1.o [1]
+gde021a1_RefreshDisplay
+                        0x080041f9     0xc  Code  Gb  gde021a1.o [1]
+gde021a1_SetDisplayWindow
+                        0x0800419d    0x48  Code  Gb  gde021a1.o [1]
+gde021a1_WritePixel     0x08004195     0x8  Code  Gb  gde021a1.o [1]
+gde021a1_drv            0x20000000    0x20  Data  Gb  gde021a1.o [1]
+main                    0x080048f5    0xf6  Code  Gb  main.o [1]
+pFont                   0x20000028     0x4  Data  Lc  stm32l0538_discovery_epd.o [1]
+uwTick                  0x200000d8     0x4  Data  Lc  stm32l0xx_hal.o [1]
+
+
+[1] = C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+   5 774 bytes of readonly  code memory
+  13 930 bytes of readonly  data memory
+   1 244 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
