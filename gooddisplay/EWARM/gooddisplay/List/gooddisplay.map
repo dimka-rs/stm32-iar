@@ -1,0 +1,359 @@
+###############################################################################
+#
+# IAR ELF Linker V8.11.2.13589/W32 for ARM                02/Jul/2017  17:46:24
+# Copyright 2007-2017 IAR Systems AB.
+#
+#    Output file  =  
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Exe\gooddisplay.out
+#    Map file     =  
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\List\gooddisplay.map
+#    Command line =  
+#        -f C:\Users\dimka\AppData\Local\Temp\EWCD9.tmp
+#        (C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\Display_EPD_W21.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\Display_EPD_W21_spi.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\main.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\startup_stm32l053xx.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_adc.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_adc_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_comp.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_comp_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_cortex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_crc.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_crc_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_cryp.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_cryp_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_dac.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_dac_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_dma.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_firewall.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_flash.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_flash_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_flash_ramfunc.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_gpio.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_i2c.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_i2c_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_i2s.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_irda.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_iwdg.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_lcd.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_lptim.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_msp.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_msp_template.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_pcd.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_pcd_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_pwr.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_pwr_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_rcc.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_rcc_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_rng.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_rtc.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_rtc_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_smartcard.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_smartcard_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_smbus.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_spi.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_tim.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_tim_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_tsc.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_uart.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_uart_ex.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_usart.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_hal_wwdg.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_adc.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_comp.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_crc.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_crs.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_dac.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_dma.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_exti.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_gpio.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_i2c.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_lptim.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_lpuart.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_pwr.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_rcc.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_rng.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_rtc.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_spi.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_tim.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_usart.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\stm32l0xx_ll_utils.o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj\system_stm32l0xx.o
+#        --redirect _Printf=_PrintfFull --redirect _Scanf=_ScanfFull -o
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Exe\gooddisplay.out
+#        --map
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\List\gooddisplay.map
+#        --config
+#        C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM/stm32l053xx_flash.icf
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x08000000 { ro section .intvec };
+"P1":  place in [from 0x08000000 to 0x0800ffff] { ro };
+define block CSTACK with size = 1K, alignment = 8 { };
+define block HEAP with size = 512, alignment = 8 { };
+"P2":  place in [from 0x20000000 to 0x20001fff] {
+          rw, block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A0":                                       0xc0
+  .intvec            ro code  0x08000000    0xc0  startup_stm32l053xx.o [1]
+                            - 0x080000c0    0xc0
+
+"P1":                                     0x376a
+  .rodata            const    0x080000c0  0x2710  main.o [1]
+  .text              ro code  0x080027d0   0x70c  stm32l0xx_hal_rcc.o [1]
+  .text              ro code  0x08002edc     0xc  stm32l0xx_hal.o [1]
+  .text              ro code  0x08002ee8    0x28  stm32l0xx_hal.o [1]
+  .text              ro code  0x08002f10    0x36  I32DivMod.o [4]
+  .text              ro code  0x08002f46     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08002f48    0x88  stm32l0xx_hal_cortex.o [1]
+  .text              ro code  0x08002fd0     0x2  IntDivZer.o [4]
+  .text              ro code  0x08002fd2     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08002fd4   0x428  main.o [1]
+  .text              ro code  0x080033fc    0x94  Display_EPD_W21_spi.o [1]
+  .text              ro code  0x08003490   0x1cc  stm32l0xx_hal_gpio.o [1]
+  .text              ro code  0x0800365c    0x20  stm32l0xx_hal.o [1]
+  .text              ro code  0x0800367c    0x28  Display_EPD_W21.o [1]
+  .text              ro code  0x080036a4     0x2  stm32l0xx_hal_msp_template.o [1]
+  .text              ro code  0x080036a6     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080036a8    0x74  system_stm32l0xx.o [1]
+  .text              ro code  0x0800371c    0x30  copy_init3.o [4]
+  .text              ro code  0x0800374c    0x28  data_init.o [4]
+  .iar.init_table    const    0x08003774    0x14  - Linker created -
+  .text              ro code  0x08003788    0x1a  cmain.o [4]
+  .text              ro code  0x080037a2     0x4  low_level_init.o [3]
+  .text              ro code  0x080037a6     0x8  exit.o [3]
+  .text              ro code  0x080037ae     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080037b0     0xa  cexit.o [4]
+  .text              ro code  0x080037ba     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080037bc    0x14  exit.o [5]
+  .text              ro code  0x080037d0    0x10  startup_stm32l053xx.o [1]
+  .text              ro code  0x080037e0     0xc  cstartup_M.o [4]
+  Initializer bytes  const    0x080037ec     0x8  <for P2-1>
+  .text              ro code  0x080037f4     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080037f6     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080037f8     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080037fa     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080037fc     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x080037fe     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003800     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003802     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003804     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003806     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003808     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x0800380a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x0800380c     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x0800380e     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003810     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003812     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003814     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003816     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003818     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x0800381a     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x0800381c     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x0800381e     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003820     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003822     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003824     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003826     0x2  startup_stm32l053xx.o [1]
+  .text              ro code  0x08003828     0x2  startup_stm32l053xx.o [1]
+  .rodata            const    0x0800382a     0x0  copy_init3.o [4]
+                            - 0x0800382a  0x376a
+
+"P2", part 1 of 2:                           0x8
+  P2-1                        0x20000000     0x8  <Init block>
+    .data            inited   0x20000000     0x4  system_stm32l0xx.o [1]
+    .bss             inited   0x20000004     0x4  stm32l0xx_hal.o [1]
+                            - 0x20000008     0x8
+
+"P2", part 2 of 2:                         0x400
+  CSTACK                      0x20000008   0x400  <Block>
+    CSTACK           uninit   0x20000008   0x400  <Block tail>
+                            - 0x20000408   0x400
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Copy (__iar_copy_init3)
+    1 source range, total size 0x8:
+          0x080037ec   0x8
+    1 destination range, total size 0x8:
+          0x20000000   0x8
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                        ro code  ro data  rw data
+    ------                        -------  -------  -------
+C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj: [1]
+    Display_EPD_W21.o                  40
+    Display_EPD_W21_spi.o             148
+    main.o                          1 064   10 000
+    startup_stm32l053xx.o             272
+    stm32l0xx_hal.o                    84        4        4
+    stm32l0xx_hal_cortex.o            136
+    stm32l0xx_hal_gpio.o              460
+    stm32l0xx_hal_msp_template.o        2
+    stm32l0xx_hal_rcc.o             1 804
+    system_stm32l0xx.o                116        4        4
+    -------------------------------------------------------
+    Total:                          4 126   10 008        8
+
+command line: [2]
+    -------------------------------------------------------
+    Total:
+
+dl6M_tlf.a: [3]
+    exit.o                              8
+    low_level_init.o                    4
+    -------------------------------------------------------
+    Total:                             12
+
+rt6M_tl.a: [4]
+    I32DivMod.o                        54
+    IntDivZer.o                         2
+    cexit.o                            10
+    cmain.o                            26
+    copy_init3.o                       48
+    cstartup_M.o                       12
+    data_init.o                        40
+    -------------------------------------------------------
+    Total:                            192
+
+shb_l.a: [5]
+    exit.o                             20
+    -------------------------------------------------------
+    Total:                             20
+
+    Linker created                              20    1 024
+-----------------------------------------------------------
+    Grand Total:                    4 350   10 028    1 032
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address    Size  Type      Object
+-----                      -------    ----  ----      ------
+.iar.init_table$$Base   0x08003774           --   Gb  - Linker created -
+.iar.init_table$$Limit  0x08003788           --   Gb  - Linker created -
+?main                   0x08003789          Code  Gb  cmain.o [4]
+AHBPrescTable           0x08003700    0x10  Data  Gb  system_stm32l0xx.o [1]
+CSTACK$$Base            0x20000008           --   Gb  - Linker created -
+CSTACK$$Limit           0x20000408           --   Gb  - Linker created -
+EPD_W21_Init            0x0800367d    0x28  Code  Gb  Display_EPD_W21.o [1]
+EPD_W21_WriteCMD        0x08003449    0x18  Code  Gb  Display_EPD_W21_spi.o [1]
+EPD_W21_WriteDATA       0x08003461    0x16  Code  Gb  Display_EPD_W21_spi.o [1]
+G_Ultrachip             0x080000c0  0x2710  Data  Gb  main.o [1]
+HAL_GPIO_Init           0x08003491   0x18a  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GPIO_ReadPin        0x0800361b     0xc  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GPIO_TogglePin      0x08003637     0x8  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GPIO_WritePin       0x08003627    0x10  Code  Gb  stm32l0xx_hal_gpio.o [1]
+HAL_GetTick             0x08002edd     0xc  Code  Wk  stm32l0xx_hal.o [1]
+HAL_Init                0x0800365d    0x1a  Code  Gb  stm32l0xx_hal.o [1]
+HAL_InitTick            0x08002ee9    0x28  Code  Wk  stm32l0xx_hal.o [1]
+HAL_MspInit             0x080036a5     0x2  Code  Gb  stm32l0xx_hal_msp_template.o [1]
+HAL_NVIC_SetPriority    0x08002f7d     0x8  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_RCC_ClockConfig     0x08002c55   0x16a  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetHCLKFreq     0x08002e39     0x6  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_GetSysClockFreq
+                        0x08002dcd    0x6c  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_RCC_OscConfig       0x080027d1   0x46c  Code  Gb  stm32l0xx_hal_rcc.o [1]
+HAL_SYSTICK_CLKSourceConfig
+                        0x08002fad    0x18  Code  Gb  stm32l0xx_hal_cortex.o [1]
+HAL_SYSTICK_Config      0x08002f85    0x28  Code  Gb  stm32l0xx_hal_cortex.o [1]
+MX_GPIO_Init            0x08003325    0xb8  Code  Lc  main.o [1]
+NVIC_SetPriority        0x08002f49    0x34  Code  Lc  stm32l0xx_hal_cortex.o [1]
+PLLMulTable             0x08003710     0xc  Data  Gb  system_stm32l0xx.o [1]
+RCC_SetFlashLatencyFromMSIRange
+                        0x08002e61    0x5e  Code  Lc  stm32l0xx_hal_rcc.o [1]
+Region$$Table$$Base     0x08003774           --   Gb  - Linker created -
+Region$$Table$$Limit    0x08003788           --   Gb  - Linker created -
+SPI_Delay               0x080033fd     0xa  Code  Gb  Display_EPD_W21_spi.o [1]
+SPI_Write               0x08003407    0x42  Code  Gb  Display_EPD_W21_spi.o [1]
+SystemClock_Config      0x0800329f    0x78  Code  Gb  main.o [1]
+SystemCoreClock         0x20000000     0x4  Data  Gb  system_stm32l0xx.o [1]
+SystemInit              0x080036a9    0x40  Code  Gb  system_stm32l0xx.o [1]
+Ultrachip               0x08003003    0x16  Code  Gb  main.o [1]
+Ultrachip_red           0x08003019    0x14  Code  Gb  main.o [1]
+__aeabi_idiv0           0x08002fd1          Code  Gb  IntDivZer.o [4]
+__cmain                 0x08003789          Code  Gb  cmain.o [4]
+__exit                  0x080037bd    0x14  Code  Gb  exit.o [5]
+__iar_copy_init3        0x0800371d    0x30  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x0800374d    0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x080037e1          Code  Gb  cstartup_M.o [4]
+__iar_small_uidiv       0x08002f11          Code  Gb  I32DivMod.o [4]
+__iar_small_uidivmod    0x08002f11          Code  Gb  I32DivMod.o [4]
+__iar_systems$$module {Abs}
+                        0x00000001          Data  Gb  command line/config [2]
+__low_level_init        0x080037a3     0x4  Code  Gb  low_level_init.o [3]
+__vector_table          0x08000000          Data  Gb  startup_stm32l053xx.o [1]
+_call_main              0x08003795          Code  Gb  cmain.o [4]
+_exit                   0x080037b1          Code  Gb  cexit.o [4]
+_main                   0x0800379f          Code  Gb  cmain.o [4]
+driver_delay_us         0x08002fd5     0xa  Code  Gb  main.o [1]
+driver_delay_xms        0x08002fdf     0xc  Code  Gb  main.o [1]
+exit                    0x080037a7     0x8  Code  Gb  exit.o [3]
+lcd_chkstatus           0x08003169    0x1c  Code  Gb  main.o [1]
+lut_b                   0x080030c0    0x10  Data  Gb  main.o [1]
+lut_bw                  0x08003035    0x6c  Code  Gb  main.o [1]
+lut_g1                  0x080030d0    0x10  Data  Gb  main.o [1]
+lut_g2                  0x080030e0    0x10  Data  Gb  main.o [1]
+lut_red                 0x080030f1    0x3a  Code  Gb  main.o [1]
+lut_red0                0x08003148    0x10  Data  Gb  main.o [1]
+lut_red1                0x08003158    0x10  Data  Gb  main.o [1]
+lut_vcom0               0x080030a0    0x10  Data  Gb  main.o [1]
+lut_vcom1               0x08003138    0x10  Data  Gb  main.o [1]
+lut_w                   0x080030b0    0x10  Data  Gb  main.o [1]
+main                    0x08003185   0x11a  Code  Gb  main.o [1]
+pic_display             0x08002feb    0x18  Code  Gb  main.o [1]
+uwTick                  0x20000004     0x4  Data  Gb  stm32l0xx_hal.o [1]
+
+
+[1] = C:\Users\dimka\Documents\GitHub\stm32-iar\gooddisplay\EWARM\gooddisplay\Obj
+[2] = command line
+[3] = dl6M_tlf.a
+[4] = rt6M_tl.a
+[5] = shb_l.a
+
+   4 350 bytes of readonly  code memory
+  10 028 bytes of readonly  data memory
+   1 032 bytes of readwrite data memory
+
+Errors: none
+Warnings: none

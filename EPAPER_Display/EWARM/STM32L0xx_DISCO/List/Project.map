@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.11.2.13589/W32 for ARM                11/Jun/2017  14:34:53
+# IAR ELF Linker V8.11.2.13589/W32 for ARM                01/Jul/2017  22:33:39
 # Copyright 2007-2017 IAR Systems AB.
 #
 #    Output file  =  
@@ -8,7 +8,7 @@
 #    Map file     =  
 #        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\List\Project.map
 #    Command line =  
-#        -f C:\Users\dimka\AppData\Local\Temp\EWD709.tmp
+#        -f C:\Users\dimka\AppData\Local\Temp\EWAB07.tmp
 #        (C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\gde021a1.o
 #        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\main.o
 #        C:\Users\dimka\Documents\GitHub\stm32-iar\EPAPER_Display\EWARM\STM32L0xx_DISCO\Obj\startup_stm32l053xx.o
